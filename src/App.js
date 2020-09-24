@@ -15,6 +15,7 @@ import SearchedPost from "./screens/searchedPost";
 import Allusers from "./screens/allUsers";
 import Alert from "./components/alert";
 import url from "./components/url";
+import ls from "local-storage";
 
 class App extends React.Component {
   constructor(props) {
@@ -30,6 +31,13 @@ class App extends React.Component {
       alertStatus: "",
       alertMessage: "",
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      userToken: ls.get("user-token") || "",
+      logedUser: ls.get("loged-user") || "",
+    });
   }
 
   signOut = () => {
@@ -77,6 +85,8 @@ class App extends React.Component {
       alertStatus: "Sukses",
       alertMessage: message,
     });
+    ls.set("user-token", token);
+    ls.set("loged-user", user);
   };
 
   pageChanger = (page) => {

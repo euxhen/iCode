@@ -31,7 +31,7 @@ class SearchedPost extends React.Component {
     return (
       <div>
         {displayPosts.length < 1 ? (
-          <p>Nuk u gjet asnje rezultat!</p>
+          <p className="not-found">Nuk u gjet asnje rezultat!</p>
         ) : (
           <div>
             <div className="row">

@@ -1,7 +1,10 @@
 .responsive-header {
   display: none;
 }
-
+.not-found {
+  text-align: center;
+  color: red;
+}
 .logo {
   height: 10px;
   width: 20px;
