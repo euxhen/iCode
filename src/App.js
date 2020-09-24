@@ -65,6 +65,7 @@ class App extends React.Component {
         this.setState({
           logedUser: data.data.user,
         });
+        ls.set("loged-user", data.data.user);
       });
   };
 

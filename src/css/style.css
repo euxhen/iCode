@@ -4,6 +4,8 @@
 .not-found {
   text-align: center;
   color: red;
+  font-weight: bold;
+  font-size: 24px;
 }
 .logo {
   height: 10px;
