@@ -34,7 +34,7 @@ class EditProfile extends React.Component {
   onUploadSubmit = () => {
     const data = new FormData();
     data.append("photo", this.state.image);
-    data.append("upload_preset", "ughhgflb");
+    data.append("upload_preset", "cfqh7evo");
     fetch(`${url}/api/v1/users/updateMe`, {
       method: "PATCH",
       headers: {
