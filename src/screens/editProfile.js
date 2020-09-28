@@ -36,7 +36,7 @@ class EditProfile extends React.Component {
     data.append("photo", this.state.image);
     data.append("upload_preset", "cfqh7evo");
     data.append("cloud_name", "devztowmv");
-    fetch(`${url}/api/v1/users/updateMe`, {
+    fetch(`https://res.cloudinary.com/devztowmv/image/upload`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${this.props.token}`,
