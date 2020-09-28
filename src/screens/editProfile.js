@@ -35,11 +35,11 @@ class EditProfile extends React.Component {
     const data = new FormData();
     data.append("photo", this.state.image);
     data.append("upload_preset", "cfqh7evo");
+    data.append("cloud_name", "devztowmv");
     fetch(`${url}/api/v1/users/updateMe`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${this.props.token}`,
-        "Content-Type": "application/x-www-form-urlencoded",
       },
       body: data,
     })
