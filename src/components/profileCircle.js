@@ -21,8 +21,8 @@ class ProfileCircle extends React.Component {
         <img
           onClick={this.profileClickedHandler}
           className="circleImg"
-          src={`https://afternoon-bayou-31759.herokuapp.com/images/user-images/${this.props.user.photo}`}
-          alt="Jonas"
+          src={`https://nodeimages1.s3.us-east-2.amazonaws.com/${this.props.user.photo}`}
+          alt="userPhoto"
         />
         {this.state.isProfileClicked ? (
           <div className="drop-down">

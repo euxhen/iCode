@@ -82,7 +82,7 @@ class Profile extends React.Component {
                 <div class="">
                   <img
                     className="user-avatar-img"
-                    src={`https://afternoon-bayou-31759.herokuapp.com/images/user-images/${user.photo}`}
+                    src={`https://nodeimages1.s3.us-east-2.amazonaws.com/${user.photo}`}
                     alt=""
                   />
                 </div>

@@ -171,7 +171,7 @@ class PostCard extends React.Component {
     }
     var photo = process.env.PUBLIC_URL + `/user-images/avatar.jpg`;
     if (this.props.user && this.props.token !== "guest") {
-      photo = `https://afternoon-bayou-31759.herokuapp.com/images/user-images/${this.props.user.photo}`;
+      photo = `https://nodeimages1.s3.us-east-2.amazonaws.com/${this.props.user.photo}`;
     }
 
     return (
@@ -181,7 +181,7 @@ class PostCard extends React.Component {
           <div>
             <div className="user-info">
               <img
-                src={`https://afternoon-bayou-31759.herokuapp.com/images/user-images/${post.postedBy.photo}`}
+                src={`https://nodeimages1.s3.us-east-2.amazonaws.com/${post.postedBy.photo}`}
                 alt="userphoto"
               />
 
@@ -262,7 +262,7 @@ class PostCard extends React.Component {
 
                   <div className="profile-img">
                     <img
-                      src={`https://afternoon-bayou-31759.herokuapp.com/images/user-images/${comment.postedBy.photo}`}
+                      src={`https://nodeimages1.s3.us-east-2.amazonaws.com/${comment.postedBy.photo}`}
                       alt=""
                     />
                   </div>

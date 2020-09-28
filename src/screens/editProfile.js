@@ -501,7 +501,7 @@ class EditProfile extends React.Component {
             <img
               className="editpage-photo"
               alt="kjk"
-              src={`https://afternoon-bayou-31759.herokuapp.com/images/user-images/${this.state.userPhoto}`}
+              src={`https://nodeimages1.s3.us-east-2.amazonaws.com/${this.state.userPhoto}`}
             />
 
             <input
