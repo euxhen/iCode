@@ -108,10 +108,17 @@ class Forum extends React.Component {
         <div className="row row-post">
           <div className="posts-section">
             <div className="new-post">
-              <img
-                src="https://nodeimages3.s3.us-east-2.amazonaws.com/user-5f6c94a598217b0017a586b5-1601390429170.jpeg"
-                alt=""
-              />
+              {this.props.token !== "guest" ? (
+                <img
+                  src={`https://nodeimages3.s3.us-east-2.amazonaws.com/${this.props.user.photo}`}
+                  alt=""
+                />
+              ) : (
+                <img
+                  src={process.env.PUBLIC_URL + `/user-images/avatar.jpg`}
+                  alt=""
+                />
+              )}
 
               <div className="post-input">
                 <textarea
