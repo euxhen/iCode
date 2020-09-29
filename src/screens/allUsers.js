@@ -30,7 +30,7 @@ class Allusers extends React.Component {
               className="developersCard"
             >
               <img
-                src={`https://nodeimages1.s3.us-east-2.amazonaws.com/${user.photo}`}
+                src={`https://s3-us-east-2.amazonaws.com/nodeimages3/${user.photo}`}
                 alt="user"
               />
               <p>{user.name}</p>

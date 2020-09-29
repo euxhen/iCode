@@ -171,7 +171,7 @@ class PostCard extends React.Component {
     }
     var photo = process.env.PUBLIC_URL + `/user-images/avatar.jpg`;
     if (this.props.user && this.props.token !== "guest") {
-      photo = `https://nodeimages2.s3.us-east-2.amazonaws.com/${this.props.user.photo}`;
+      photo = `https://s3-us-east-2.amazonaws.com/nodeimages3/${this.props.user.photo}`;
     }
     console.log(post.postedBy.photo);
 
@@ -182,7 +182,7 @@ class PostCard extends React.Component {
           <div>
             <div className="user-info">
               <img
-                src={`https://nodeimages2.s3.us-east-2.amazonaws.com/${post.postedBy.photo}`}
+                src={`https://s3-us-east-2.amazonaws.com/nodeimages3/${post.postedBy.photo}`}
                 alt="userphoto"
               />
 
@@ -263,7 +263,7 @@ class PostCard extends React.Component {
 
                   <div className="profile-img">
                     <img
-                      src={`https://nodeimages2.s3.us-east-2.amazonaws.com/${comment.postedBy.photo}`}
+                      src={`https://s3-us-east-2.amazonaws.com/nodeimages3/${comment.postedBy.photo}`}
                       alt=""
                     />
                   </div>

@@ -21,7 +21,7 @@ class ProfileCircle extends React.Component {
         <img
           onClick={this.profileClickedHandler}
           className="circleImg"
-          src={`https://s3-us-east-2.amazonaws.com/nodeimages2/${this.props.user.photo}`}
+          src={`https://s3-us-east-2.amazonaws.com/nodeimages3/${this.props.user.photo}`}
           alt="userPhoto"
         />
         {this.state.isProfileClicked ? (
