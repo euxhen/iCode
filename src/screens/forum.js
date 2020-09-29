@@ -103,6 +103,10 @@ class Forum extends React.Component {
     console.log(this.props.user.photo);
     return (
       <div>
+        <img
+          src="https://s3-us-east-2.amazonaws.com/nodeimages2/user-5f72593f08990a0017bec90d-1601380870431.jpeg"
+          alt="phot1"
+        />
         {this.state.displayAlert ? this.displayAlert() : null}
         <div className="row row-post">
           <div className="posts-section">
