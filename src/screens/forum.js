@@ -100,6 +100,7 @@ class Forum extends React.Component {
     if (this.props.token !== "guest") {
       photo = `https://s3-us-east-2.amazonaws.com/nodeimages2/${this.props.user.photo}`;
     }
+    console.log(this.props.user.photo);
     return (
       <div>
         {this.state.displayAlert ? this.displayAlert() : null}
