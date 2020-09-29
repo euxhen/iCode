@@ -181,7 +181,7 @@ class PostCard extends React.Component {
           <div>
             <div className="user-info">
               <img
-                src={`https://nodeimages2.s3.amazonaws.com/${post.postedBy.photo}`}
+                src={`https://nodeimages2.s3.us-east-2.amazonaws.com/${post.postedBy.photo}`}
                 alt="userphoto"
               />
 
