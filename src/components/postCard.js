@@ -173,6 +173,7 @@ class PostCard extends React.Component {
     if (this.props.user && this.props.token !== "guest") {
       photo = `https://nodeimages2.s3.us-east-2.amazonaws.com/${this.props.user.photo}`;
     }
+    console.log(post.postedBy.photo);
 
     return (
       <div className="central-item">
