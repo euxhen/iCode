@@ -98,7 +98,8 @@ class Forum extends React.Component {
     var displayPosts = this.state.posts;
     let photo = process.env.PUBLIC_URL + `/user-images/avatar.jpg`;
     if (this.props.token !== "guest") {
-      photo = `https://s3-us-east-2.amazonaws.com/nodeimages3/${this.props.user.photo}`;
+      photo = `https://nodeimages3.s3.us-east-2.amazonaws.com/user-5f6c94a598217b0017a586b5-1601390429170.jpeg`;
+      // photo = `https://s3-us-east-2.amazonaws.com/nodeimages3/${this.props.user.photo}`;
     }
     console.log(this.props.user.photo);
     return (
