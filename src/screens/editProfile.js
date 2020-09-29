@@ -39,7 +39,6 @@ class EditProfile extends React.Component {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${this.props.token}`,
-        ContentType: "image/jpeg",
       },
       body: data,
     })
