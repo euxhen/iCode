@@ -96,11 +96,11 @@ class Forum extends React.Component {
   render() {
     var displayArray = this.state.jobs;
     var displayPosts = this.state.posts;
-    let photo = process.env.PUBLIC_URL + `/user-images/avatar.jpg`;
+    let photo = "https://s3-us-east-2.amazonaws.com/nodeimages3/avatar.jpp";
     if (this.props.token !== "guest") {
       photo = `https://s3-us-east-2.amazonaws.com/nodeimages3/${this.props.user.photo}`;
     }
-    console.log(this.props.user.photo);
+
     return (
       <div>
         {this.state.displayAlert ? this.displayAlert() : null}
