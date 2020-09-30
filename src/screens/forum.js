@@ -96,7 +96,7 @@ class Forum extends React.Component {
   render() {
     var displayArray = this.state.jobs;
     var displayPosts = this.state.posts;
-    let photo = "https://s3-us-east-2.amazonaws.com/nodeimages3/avatar.jpg";
+    let photo = "https://s3-us-east-2.amazonaws.com/nodeimages3/avatar.jpeg";
     if (this.props.token !== "guest") {
       photo = `https://s3-us-east-2.amazonaws.com/nodeimages3/${this.props.user.photo}`;
     }
