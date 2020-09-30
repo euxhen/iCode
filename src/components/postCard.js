@@ -169,11 +169,10 @@ class PostCard extends React.Component {
     if (this.state.isLiked) {
       displayLike = FilledLike;
     }
-    var photo = process.env.PUBLIC_URL + `/user-images/avatar.jpg`;
+    let photo = "https://s3-us-east-2.amazonaws.com/nodeimages3/avatar.jpg";
     if (this.props.user && this.props.token !== "guest") {
       photo = `https://s3-us-east-2.amazonaws.com/nodeimages3/${this.props.user.photo}`;
     }
-    console.log(post.postedBy.photo);
 
     return (
       <div className="central-item">
