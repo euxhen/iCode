@@ -20,6 +20,9 @@
   width: 150px;
   height: 150px;
 }
+.row-bott {
+  padding-bottom: 30px;
+}
 .footer {
   display: flex;
   flex-wrap: wrap;

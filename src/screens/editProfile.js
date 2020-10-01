@@ -500,7 +500,7 @@ class EditProfile extends React.Component {
 
             <img
               className="editpage-photo"
-              alt="kjk"
+              alt="userphoto"
               src={`https://s3-us-east-2.amazonaws.com/nodeimages3/${this.state.userPhoto}`}
             />
 

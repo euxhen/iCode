@@ -60,7 +60,7 @@ class JobPage extends React.Component {
         </div>
 
         <div>
-          <div>
+          <div className="row-bott">
             <div class="row">
               <div>
                 <div class="job-detail">

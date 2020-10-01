@@ -49,6 +49,8 @@ class App extends React.Component {
       alertStatus: "Sukses",
       alertMessage: "Ju dolet me sukses",
     });
+    ls.set("user-token", "");
+    ls.set("loged-user", "");
   };
 
   getMe = () => {
